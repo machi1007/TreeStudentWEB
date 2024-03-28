@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>學生自製網頁</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: url('1.png') no-repeat center center/cover;
+            color: #333;
+            text-align: center;
+            background-attachment: fixed;
+            opacity: 0.9;
+        }
+        .content {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h4 {
+            color: #556;
+            margin-bottom: 15px;
+        }
+        .dropdown {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none; /* 移除項目符號 */
+            padding: 0;
+            margin: 0; /* 根據需要調整默認的外邊距 */
+        }
+        ul li {
+            background-color: #fff;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        ul li a:hover {
+            color: #0088cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>探險團自製網頁整理</h1>
+        <h2>(所有網站僅為教育用途，點擊即可進入)</h2>
+        <h3>😀★6114探險團(2024.03)★😀</h3>
+
+        <!-- Dropdown for navigation -->
+        <div class="dropdown">
+            <select id="sectionSelect" onchange="navigateToSection()">
+                <option value="">選擇一個區塊...</option>
+                <option value="section1">團員簡介網</option>
+                <option value="section2">國語詞語庫</option>
+                <option value="section3">英語單字庫</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+
+        <!-- Sections -->
+        <div class="section" id="section1">
+            <h4>團員簡介網</h4>
+            <ul>
+                <li><a href="https://example.com">(待製作)</a></li>
+                <li><a href="https://example.com">(待製作)</a></li>
+                <!-- List items -->
+            </ul>
+        </div>
+
+        <div class="section" id="section2">
+            <h4>國語詞語庫</h4>
+            <ul>
+                <li><a href="https://myjghjgmg.github.io/voc1/">成語庫(1)</a></li>
+                <li><a href="https://swps514144.github.io/voc1/">涵涵成語庫(14)</a></li>
+                <!-- List items -->
+            </ul>
+        </div>
+
+        <div class="section" id="section3">
+            <h4>英語單字庫</h4>
+            <ul>
+                <li><a href="https://machi1007.github.io/voc1/">大樹單字庫</a></li>
+                <li><a href="https://alice5779.github.io/voc1/">丸子單字庫(15)</a></li>
+                <li><a href="https://chimmy09123456789.github.io/voc1/">草莓單字庫(18)</a></li>
+                <li><a href="https://alisa514222.github.io/voc1/">立單字庫(22)</a></li>
+                <li><a href="https://swps1117.github.io/voc1/">單字庫(25)</a></li>
+                <li><a href="https://joyce1020313.github.io/voc1/">茶碗蒸單字庫(28)</a></li>
+
+                <!-- List items -->
+            </ul>
+        </div>
+
+
+
+        <!-- More sections as needed -->
+    </div>
+
+    <script>
+        function navigateToSection() {
+            var section = document.getElementById("sectionSelect").value;
+            if (section) {
+                location.href = "#" + section;
+            }
+        }
+    </script>
+</body>
+</html>
